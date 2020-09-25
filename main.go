@@ -11,29 +11,31 @@ func main() {
 	} else {
 		signo := mes*mes*10 + dia
 		switch {
-		case signo >= 30 && signo <= 58:
+		case signo <= 29:
+			fmt.Println("capricornio")
+		case signo <= 58:
 			fmt.Println("acuario")
-		case signo >= 59 && signo <= 110:
+		case signo <= 110:
 			fmt.Println("piscis")
-		case signo >= 111 && signo <= 179:
+		case signo <= 179:
 			fmt.Println("aries")
-		case signo >= 180 && signo <= 270:
+		case signo <= 270:
 			fmt.Println("tauro")
-		case signo >= 271 && signo <= 380:
+		case signo <= 380:
 			fmt.Println("géminis")
-		case signo >= 381 && signo <= 512:
+		case signo <= 512:
 			fmt.Println("cáncer")
-		case signo >= 513 && signo <= 662:
+		case signo <= 662:
 			fmt.Println("leo")
-		case signo >= 663 && signo <= 832:
+		case signo <= 832:
 			fmt.Println("virgo")
-		case signo >= 833 && signo <= 1022:
+		case signo <= 1022:
 			fmt.Println("libra")
-		case signo >= 1021 && signo <= 1231:
+		case signo <= 1231:
 			fmt.Println("escorpio")
-		case signo >= 1232 && signo <= 1461:
+		case signo <= 1461:
 			fmt.Println("sagitario")
-		case signo >= 1462 && signo <= 29:
+		case signo >= 1462:
 			fmt.Println("capricornio")
 		}
 	}
