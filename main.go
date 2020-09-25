@@ -9,30 +9,31 @@ func main() {
 	if dia < 1 || dia > 31 || mes < 1 || mes > 12 {
 		fmt.Println("error en la entrada")
 	} else {
+		signo := mes*mes*10 + dia
 		switch {
-		case (mes == 1 && dia >= 20) || (mes == 2 && dia <= 18):
+		case signo >= 30 && signo <= 58:
 			fmt.Println("acuario")
-		case (mes == 2 && dia >= 19) || (mes == 3 && dia <= 20):
+		case signo >= 59 && signo <= 110:
 			fmt.Println("piscis")
-		case (mes == 3 && dia >= 21) || (mes == 4 && dia <= 19):
+		case signo >= 111 && signo <= 179:
 			fmt.Println("aries")
-		case (mes == 4 && dia >= 20) || (mes == 5 && dia <= 20):
+		case signo >= 180 && signo <= 270:
 			fmt.Println("tauro")
-		case (mes == 5 && dia >= 21) || (mes == 6 && dia <= 20):
+		case signo >= 271 && signo <= 380:
 			fmt.Println("géminis")
-		case (mes == 6 && dia >= 21) || (mes == 7 && dia <= 22):
+		case signo >= 381 && signo <= 512:
 			fmt.Println("cáncer")
-		case (mes == 7 && dia >= 23) || (mes == 8 && dia <= 22):
+		case signo >= 513 && signo <= 662:
 			fmt.Println("leo")
-		case (mes == 8 && dia >= 23) || (mes == 9 && dia <= 22):
+		case signo >= 663 && signo <= 832:
 			fmt.Println("virgo")
-		case (mes == 9 && dia >= 23) || (mes == 10 && dia <= 22):
+		case signo >= 833 && signo <= 1022:
 			fmt.Println("libra")
-		case (mes == 10 && dia >= 23) || (mes == 11 && dia <= 21):
+		case signo >= 1021 && signo <= 1231:
 			fmt.Println("escorpio")
-		case (mes == 11 && dia >= 22) || (mes == 12 && dia <= 21):
+		case signo >= 1232 && signo <= 1461:
 			fmt.Println("sagitario")
-		case (mes == 12 && dia >= 22) || (mes == 1 && dia <= 19):
+		case signo >= 1462 && signo <= 29:
 			fmt.Println("capricornio")
 		}
 	}
